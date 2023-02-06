@@ -25,7 +25,7 @@ export const Header = () => {
         <NavItem text='About'/>
       </nav>
       <div className="hidden ml-auto xl:flex space-x-5">
-        <Button> Loggin </Button>
+        <Button hasSimpleStyles={ true }> Loggin </Button>
         <Button hasBorder={ true }> Register </Button>
       </div>
       <div onClick={ () => setIsMobileMenuOpen(!isMobileMenuOpen) } className="flex xl:hidden ml-auto cursor-pointer z-30">

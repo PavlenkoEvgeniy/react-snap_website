@@ -6,9 +6,9 @@ export const NavItem = ({text = 'asd', children}) => {
   const [selected, setSelected] = useState('');
   return (
     <div className='relative'>
-      <div className='flex space-x-2 cursor-pointer items-center'>
+      <div className='flex space-x-2 cursor-pointer items-center '>
         <span 
-          className='text-medium-gray hover:text-almost-black'
+          className='text-medium-gray hover:text-almost-black transition duration-500 ease-in-out'
           onClick={() => children && setSelected(text !== selected ? text : '')}
         >{text}</span>
         {children && (selected === text ?  <ArrowUpIcon /> : <ArrowDownIcon />)}
